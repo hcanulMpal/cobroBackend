@@ -6,8 +6,8 @@ class getNum:
 
     def Gen(self, data):
 
-        folio = data
+        folio = str(data)
         newHora = hora.strftime('%d%m$y%H%M%S')
         lineadepago = newHora + folio
 
-        return str(lineadepago)
+        return lineadepago
