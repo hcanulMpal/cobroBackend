@@ -2,6 +2,7 @@ from flask import Blueprint
 from flask_cors import CORS
 from ..controllers import ServiciosCtl
 from ..controllers.registro import fregistro
+import requests
 
 
 landing = Blueprint('admini', __name__)
@@ -17,7 +18,7 @@ def setservicios():
 
 @landing.route("/api/landing/serviciospost", methods=['POST'])
 def getservicios():
-    return re.getdata(request.json)
+    return re.getdata(requests.json)
 
 
     

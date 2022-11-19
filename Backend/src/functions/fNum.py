@@ -1,13 +1,13 @@
 import datetime
 
-hora = datetime.datetime.now()
-
 class getNum:
+
+    hora = datetime.datetime.now()
 
     def Gen(self, data):
 
         folio = str(data)
-        newHora = hora.strftime('%d%m$y%H%M%S')
+        newHora = self.hora.strftime('%d%m$y%H%M%S')
         lineadepago = newHora + folio
 
         return lineadepago
