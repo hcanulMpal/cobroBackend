@@ -1,4 +1,4 @@
-from ..models import db, dbServicios
+from ..models import db, Servicios
 
 base = db.session
 
@@ -9,12 +9,12 @@ class funcServ():
     }
 
     def is_Data(self):
-        if not dbServicios.query.all():
+        if not Servicios.query.all():
             pass
     
 
     def saveServ(self, data):
-        serv = dbServicios(
+        serv = Servicios(
             name = data['name'],
             precio = data['precio'],
         )

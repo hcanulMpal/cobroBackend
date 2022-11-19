@@ -7,3 +7,5 @@ __pycache__
 
 # Ignora carpeta venv de backend
 /venv
+
+.secret.txt
