@@ -8,7 +8,6 @@ base = db.session
 
 class guardarDatos:
 
-
     def savePersona(self, data):
 
         persona = Persona(
