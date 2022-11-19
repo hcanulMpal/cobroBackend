@@ -1,0 +1,10 @@
+Flask
+Flask-SQLAlchemy
+PyMySQL
+secret-key-generator
+SQLAlchemy
+requests
+flask-marshmallow
+marshmallow
+marshmallow-sqlalchemy
+cloudinary
