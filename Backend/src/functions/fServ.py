@@ -1,23 +1,8 @@
-<<<<<<< Updated upstream
-=======
-from ..schemas import pago, pagos
-
->>>>>>> Stashed changes
 from ..models import db, Servicios
 
 base = db.session
 
 class funcServ():
-<<<<<<< Updated upstream
-    luz = {
-        "name": 'Luz',
-        "precio": 200,
-    }
-
-    def is_Data(self):
-        if not Servicios.query.all():
-            pass
-=======
     luz = [
         {
             "nombre": 'Luz',
@@ -38,7 +23,6 @@ class funcServ():
             for item in self.luz:
                 self.saveServ(item)
         return True, 200
->>>>>>> Stashed changes
     
 
     def saveServ(self, data):
