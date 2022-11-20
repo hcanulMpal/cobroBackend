@@ -23,6 +23,7 @@ class Pagos(db.Model):
     folio = db.Column(db.String(20), nullable=False)
     servicios_id = db.Column(db.Integer, db.ForeignKey('servicios.id', ondelete='SET NULL'), nullable = True)
     persona_id = db.Column(db.Integer, db.ForeignKey('persona.id', ondelete='SET NULL'), nullable = True)
+    precio = db.Column(db.Float, nullable=False)
     lineaDePago = db.Column(db.String(20), nullable= False, unique=True)
     created_date = db.Column(db.DateTime, default=datetime.datetime.now)
     update_on = db.Column(db.DateTime, default=db.func.current_timestamp(), onupdate=db.func.current_timestamp()) 
