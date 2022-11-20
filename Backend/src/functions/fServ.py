@@ -1,4 +1,5 @@
 from ..models import db, Servicios
+from ..schemas import services, service
 
 base = db.session
 
@@ -27,8 +28,13 @@ class funcServ():
 
     def saveServ(self, data):
         serv = Servicios(
-            name = data['name'],
+            nombre = data['nombre'],
             precio = data['precio'],
         )
         base.add(serv)
         base.commit()
+
+    def setservice(self):
+        return services.jsonify(Servicios.query.all())
+
+

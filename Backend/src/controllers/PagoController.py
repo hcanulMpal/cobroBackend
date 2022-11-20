@@ -1,8 +1,8 @@
 from ..functions import funcServ
 
-pag = funcServ()
+ser = funcServ()
 
 class ServiciosCtl:
 
     def setserviciosomg(self):
-        return pag.setservicio()
+        return ser.setservice()
